@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Generador de Contraseñas Aleatorias</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<link rel="shorcut icon" type="image/x-icon" href="imagenes/rolo.ico">
+</head>
+<body>
+<div class="contenedor">
+	<h1>Generador de Contraseñas Seguras</h1>
+	<div class="inputBox">
+		<input type="text" class="passBox" id="passBox" disabled>
+		<span class="material-icons" id="copyIcon">content_copy</span>
+	</div>
+	<input type="range" min="10" max="30" value="10" id="inputSlider">
+	<div class="row">
+		<p>Longitud de la contraseña</p>
+		<span id="sliderValue">10</span>
+	</div>
+	
+	<div class="row">
+		<label for="lowercase">Include Lowercase Letters (a-z)</label>
+		<input type="checkbox" name="lowercase" id="lowercase">
+	</div>
+	
+	<div class="row">
+		<label for="uppercase">Include Uppercase Letters (A-Z)</label>
+		<input type="checkbox" name="uppercase" id="uppercase">
+	</div>
+	
+	<div class="row">
+		<label for="numbers">Include Numbers (0-9)</label>
+		<input type="checkbox" name="numbers" id="numbers">
+	</div>
+	
+	<div class="row">
+		<label for="symbols">Include Symbols (@-#)</label>
+		<input type="checkbox" name="symbols" id="symbols">
+	</div>
+	
+	<button type="button" class="getBtn" id="getBtn">
+	Generar Contraseña
+	</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
